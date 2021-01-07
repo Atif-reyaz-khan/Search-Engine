@@ -3,49 +3,28 @@
 
 
 <h2 style="text-align: center;">{{search| title}}</h2>
-
 <div class='row'>
+{%for post in final_postings%}
+
+
     <div class="col s4">
       <div class="card">
         <div class="card-image">
-          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.JeboExxFNUyfs9CdL63eugHaEK%26pid%3DApi&f=1">
-     
+          <a href="{{post.1}}"><img src="{{post.3}}"></a>
         </div>
         <div class="card-content">
-          <p>TEST</p></div>
+          <p>{{post.0}}</p></div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="{{post.1}}">view listing price:  {{post.2}}</a>
         </div>
       
     </div>
   </div>
-  <div class="col s4">
-    <div class="card">
-      <div class="card-image">
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.JeboExxFNUyfs9CdL63eugHaEK%26pid%3DApi&f=1">
-   
-      </div>
-      <div class="card-content">
-        <p>TEST</p></div>
-      <div class="card-action">
-        <a href="#">This is a link</a>
-      </div>
-    
-  </div>
+  
+
+{%endfor%}
 </div>
-<div class="col s4">
-    <div class="card">
-      <div class="card-image">
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.JeboExxFNUyfs9CdL63eugHaEK%26pid%3DApi&f=1">
-   
-      </div>
-      <div class="card-content">
-        <p>TEST</p></div>
-      <div class="card-action">
-        <a href="#">This is a link</a>
-      </div>
-</div>
-  </div>
-</div>
+
+
 
 {% endblock content%}

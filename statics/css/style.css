@@ -17,7 +17,14 @@
     margin: 0;
     list-style: none;
   }
-  
+.card{
+    height: 400px;
+overflow: hidden;
+}
+.card-image{
+    height: 250px;
+    overflow: hidden;
+}
   .flex-item {
     background: tomato;
     padding: 5px;
